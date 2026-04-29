@@ -14,10 +14,10 @@
 <body>
     <nav class=" navbar">
         <div class="nav-right">
-            <img src="./asts/photo_2026-04-28_12-17-33.jpg" alt="" height="50" width="150px" class="logo">
+            <h2> perfume</h2>
         </div>
 
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger">
             ☰
         </div>
         <ul class=" nav-left">
@@ -134,7 +134,7 @@
     <section class="about-product">
 
         <div class="about-overly">
-            <h2 class="slid-down">Our Srory</h2>
+            <h2 class="slid-down">Our Story</h2>
             <p class="slid-down">
                 We are a luxury perfume brand dedicated <br> to creating high-quality and long-lasting <br> fragrances.
                 Each
@@ -217,8 +217,8 @@
         </div>
 
     </section>
-   
-  
+
+
     <script>
         function openCard(clickedCard) {
             let cards = document.querySelectorAll(".card");
@@ -237,13 +237,14 @@
         });
     </script> -->
     <script>
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav-left");
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav-left");
 
-hamburger.addEventListener("click", () => {
-    nav.classList.toggle("show");
-});
-</script>
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+            console.log(nav.className);
+        });
+    </script>
 
 
 

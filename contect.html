@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="contec.css">
+</head>
+
+<body>
+    <nav class=" navbar">
+        <div class="nav-right">
+            <h2> perfume</h2>
+        </div>
+
+        <div class="hamburger">
+            ☰
+        </div>
+        <ul class=" nav-left">
+            <li><a href="">HOME</a></li>
+            <li><a href="">About</a></li>
+            <li> <a href="">Shop</a></li>
+            <li> <a href="">Contact</a></li>
+        </ul>
+
+    </nav>
+    <header>
+        <section class="about-product">
+
+            <div class="about-overly">
+                <h2 class="slid-down">Contact Us</h2>
+
+            </div>
+
+        </section>
+
+    </header>
+    <section class="contect">
+        <div>
+            <h2> Contact</h2>
+            <p> Contect information</p>
+        </div>
+        <div class="conect-info">
+            <div class="itme">
+                <i class="fa-solid fa-phone"></i>
+                <p> 493704546745</p>
+                <p> This number is available</p>
+            </div>
+            <div class="itme">
+                <i class="fa-solid fa-envelope"></i>
+                <p> nadia.ibrahimi4545@gmail.com</p>
+                <p> this email is available</p>
+            </div>
+            <div class="itme">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Herat,Afghanistan</p>
+                <p>24/7</p>
+            </div>
+        </div>
+    </section>
+    <div id="map"></div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([34.3529, 62.2040], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'OSM'
+        }).addTo(map);
+        L.marker([34.3529, 62.2040]).addTo(map)
+            .bindPopup("My Location")
+            .openPopup();
+    </script>
+
+</body>
+
+</html>
