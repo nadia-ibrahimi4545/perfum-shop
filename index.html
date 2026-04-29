@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class=" navbar">
+        <div class="nav-right">
+            <img src="./asts/photo_2026-04-28_12-17-33.jpg" alt="" height="50" width="150px" class="logo">
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        <ul class=" nav-left">
+            <li><a href="">HOME</a></li>
+            <li><a href="">About</a></li>
+            <li> <a href="">Shop</a></li>
+            <li> <a href="">Contact</a></li>
+        </ul>
+
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-left").classList.toggle("show");
+        }
+    </script>
+    <header>
+        <section class="hero">
+            <div class="header-text">
+
+                <h1 class="header-title">Pure LUXURY </h1>
+                <p class="border-bootom">________________________︶________________________</p>
+
+                <P>Discover the essence of sophistication with our exclusive <br>collection of fragrances</P>
+                <button class="header-btn"> Shop Now</button>
+            </div>
+
+        </section>
+
+    </header>
+    <section class="glarry">
+        <h1 class="text-glarry">Our Perfumes</h1>
+
+        <div class="products">
+
+            <div class="card" onclick="openCard(this)">
+                <img src="./asts/photo_2026-04-28_12-44-56.jpg" height="275px">
+                <div class="overlay">
+                    <h3>Perfume 1</h3>
+                    <p>$55</p>
+                    <button class="slid-down"> <a href=""> Buy Now</a></button>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCard(this)">
+                <img src="./asts/photo_2026-04-28_12-44-53.jpg">
+                <div class="overlay">
+                    <h3>Perfume 2</h3>
+                    <p>$66</p>
+                    <button class="slid-down"> <a href=""> Buy Now</a></button>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCard(this)">
+                <img src="./asts/photo_2026-04-28_12-28-32.jpg" height="275px">
+                <div class="overlay">
+                    <h3>Perfume 3</h3>
+                    <p>$60</p>
+                    <button class="slid-down"> <a href=""> Buy Now</a></button>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCard(this)">
+                <img src="./asts/photo_2026-04-28_12-45-00.jpg" height="275px">
+                <div class="overlay">
+                    <h3>Perfume 4</h3>
+                    <p>$50</p>
+                    <button class="slid-down"> <a href=""> Buy Now</a></button>
+                </div>
+            </div>
+            <div class="products">
+
+                <div class="card" onclick="openCard(this)">
+                    <img src="./asts/1.jpg" height="277px">
+                    <div class="overlay">
+                        <h3>Perfume 5</h3>
+                        <p>$50</p>
+                        <button class="slid-down"> <a href=""> Buy Now</a></button>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(this)">
+                    <img src="./asts/2.jpg" height="277px">
+                    <div class="overlay">
+                        <h3>Perfume 6</h3>
+                        <p>$70</p>
+                        <button class="slid-down"> <a href=""> Buy Now</a></button>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(this)">
+                    <img src="./asts/3.jpg" height="275px">
+                    <div class="overlay">
+                        <h3>Perfume 7</h3>
+                        <p>$60</p>
+                        <button class="slid-down"> <a href=""> Buy Now</a></button>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(this)">
+                    <img src="./asts/4.jpg" height="275px">
+                    <div class="overlay">
+                        <h3>Perfume 8</h3>
+                        <p>$60</p>
+                        <button class="slid-down"> <a href=""> Buy Now</a></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="about-product">
+
+        <div class="about-overly">
+            <h2 class="slid-down">Our Srory</h2>
+            <p class="slid-down">
+                We are a luxury perfume brand dedicated <br> to creating high-quality and long-lasting <br> fragrances.
+                Each
+                scent is
+                designed to express elegance and individuality.
+            </p>
+            <button class="slid-down"> <a href=""> Learn more</a></button>
+        </div>
+
+    </section>
+    <section class="categories">
+
+        <h2>Categories</h2>
+
+        <div class="container">
+
+            <a href="men.html" class="card-2">
+                <h3>Men Perfume</h3>
+                <p>Strong & masculine scents</p>
+            </a>
+
+            <a href="women.html" class="card-2">
+                <h3>Women Perfume</h3>
+                <p>Elegant & soft fragrances</p>
+            </a>
+
+            <a href="luxury.html" class="card-2">
+                <h3>Luxury</h3>
+                <p>Premium exclusive perfumes</p>
+            </a>
+
+            <a href="new.html" class="card-2">
+                <h3>New Arrivals</h3>
+                <p>Latest added products</p>
+            </a>
+
+            <a href="best.html" class="card-2">
+                <h3>Best Sellers</h3>
+                <p>Most popular perfumes</p>
+            </a>
+
+            <a href="unisex.html" class="card-2">
+                <h3>Unisex</h3>
+                <p>For both men & women</p>
+            </a>
+
+        </div>
+
+    </section>
+    <section class="choose">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="choose-container">
+
+            <div class="box">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h3>Fast Delivery</h3>
+                <p>We deliver quickly and safely.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gem icon"></i>
+                <h3>100% Original</h3>
+                <p>All perfumes are authentic.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-tags icon"></i>
+                <h3>Best Price</h3>
+                <p>Affordable luxury perfumes.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-lock icon"></i>
+                <h3>Secure Shopping</h3>
+                <p>Your data is safe with us.</p>
+            </div>
+
+        </div>
+
+    </section>
+   
+  
+    <script>
+        function openCard(clickedCard) {
+            let cards = document.querySelectorAll(".card");
+            cards.forEach(card => {
+                card.classList.remove("active");
+            });
+            clickedCard.classList.add("active");
+        }
+
+    </script>
+    <!-- <script>
+        const el = document.querySelector('.slide-down');
+
+        window.addEventListener('load', () => {
+            el.classList.add('show');
+        });
+    </script> -->
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav-left");
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("show");
+});
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
