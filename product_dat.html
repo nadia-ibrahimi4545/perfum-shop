@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product_det.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class=" navbar">
+        <div class="nav-right">
+            <h2>LUXURY PERFUME</h2>
+        </div>
+
+        <div class="hamburger">
+            ☰
+        </div>
+        <ul class=" nav-left">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li> <a href="./product.html">Products</a></li>
+            <li> <a href="./product_dat.html">Products-Details</a></li>
+            <li> <a href="./card_check.html">Cart&Checkout</a></li>
+            <li> <a href="./contect.html">Contact</a></li>
+        </ul>
+
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav-left");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+            console.log(nav.className);
+        });
+    </script>
+    <section class="product-details">
+        <div class="product">
+
+            <div class="image-box">
+                <img src="./asts/w1.jpg" alt="Noir Elegance">
+            </div>
+
+            <div class="info-box">
+                <h1>Noir Elegance</h1>
+
+                <p class="type">Women • Luxury Night</p>
+
+                <p class="price">$49.99</p>
+
+                <p>Size:100ml</p>
+                <p>Longevity: Long Lasting</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Rose, Bergamot</li>
+                    <li>Middle: Jasmine, Vanilla</li>
+                    <li>Base: Musk, Amber</li>
+                </ul>
+
+                <p class="desc">
+                    A luxurious and romantic perfume designed for special nights.
+                    It gives confidence and elegance.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+
+        <div class="product">
+            <div class="image-box">
+                <img src="./asts/m2.jpg">
+            </div>
+
+            <div class="info-box">
+                <h1>Ocean Breeze</h1>
+                <p class="type">Men • Fresh Daily</p>
+                <p class="price">$39.99</p>
+
+                <p>Size: 100ml</p>
+                <p>Longevity:Medium</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Sea, Lemon</li>
+                    <li>Middle: Citrus, Mint</li>
+                    <li>Base: Cedarwood</li>
+                </ul>
+
+                <p class="desc">
+                    Fresh and energetic scent for daily use and summer days.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image-box">
+                <img src="./asts/p4.jpg">
+            </div>
+
+            <div class="info-box">
+                <h1>Royal Bloom</h1>
+                <p class="type">Luxury• Classic</p>
+                <p class="price">$45.00</p>
+
+                <p>Size:90ml</p>
+                <p>Longevity:Long</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Orange Blossom</li>
+                    <li>Middle: Jasmine</li>
+                    <li>Base: Musk</li>
+                </ul>
+
+                <p class="desc">
+                    Soft floral fragrance with elegant and feminine touch.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="image-box">
+                <img src="./asts/u4.jpg">
+            </div>
+
+            <div class="info-box">
+                <h1>Mystic Oud</h1>
+                <p class="type">Arabic • Luxury</p>
+                <p class="price">$79.99</p>
+
+                <p><b>Size:</b> 100ml</p>
+                <p><b>Longevity:</b> Very Long</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Saffron</li>
+                    <li>Middle: Oud</li>
+                    <li>Base: Musk, Amber</li>
+                </ul>
+
+                <p class="desc">
+                    Strong oriental perfume with royal Arabic identity.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="image-box">
+                <img src="./asts/bbbbbb.jpg">
+            </div>
+
+            <div class="info-box">
+                <h1>Citrus Energy</h1>
+                <p class="type">Unisex • Fresh</p>
+                <p class="price">$35.00</p>
+
+                <p>Size: 80ml</p>
+                <p>Longevity:Medium</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Lemon</li>
+                    <li>Middle: Orange</li>
+                    <li>Base: Mint</li>
+                </ul>
+
+                <p class="desc">
+                    Fresh energetic scent for daily use and sports.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image-box">
+                <img src="./asts/n6.jpg">
+            </div>
+            <div class="info-box">
+                <h1>Amber Night</h1>
+                <p class="type">Unisex • Luxury</p>
+                <p class="price">$69.99</p>
+
+                <p>Size:100ml</p>
+                <p>Longevity: Very Long</p>
+
+                <h3>Fragrance Notes</h3>
+                <ul>
+                    <li>Top: Vanilla</li>
+                    <li>Middle: Amber</li>
+                    <li>Base: Sandalwood</li>
+                </ul>
+
+                <p class="desc">
+                    Warm and deep luxury fragrance for special nights.
+                </p>
+
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h2 class="logo">Luxury Perfume</h2>
+                <p>
+                    We create timeless fragrances that define elegance, confidence, and individuality.
+                    Every scent tells your story.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li> <a href="./product.html">Products</a></li>
+                    <li> <a href="./product_dat.html">Products-Details</a></li>
+                    <li> <a href="./card_check.html">Cart&Checkout</a></li>
+                    <li> <a href="./contect.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>Perfume Categories</h3>
+                <ul>
+                    <li><a href="./product.html">Men Perfume</a></li>
+                    <li><a href="./product.html">Women Perfume</a></li>
+                    <li><a href="./product.html">Luxury Collection</a></li>
+                    <li><a href="./product.html">New Arrivals</a></li>
+                    <li><a href="./product.html">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Fast Delivery</li>
+                    <li>Secure Payment</li>
+                    <li>24/7 Support</li>
+                    <li>Easy Return</li>
+                    <li>Gift Packaging</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@perfume.com</p>
+                <p>Phone: +93 700 000 000</p>
+                <p>Address: Herat, Afghanistan</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+
+        </div>
+
+        <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Luxury Perfume | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

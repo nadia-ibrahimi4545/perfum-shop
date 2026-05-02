@@ -52,7 +52,7 @@ body {
 .hamburger {
     display: none;
     font-size: 26px;
-    color: white;
+    color: wheat;
     cursor: pointer;
 }
 
@@ -86,6 +86,7 @@ body {
 .nav-right {
     font-family: 'playfair display';
     color: #d4af37;
+    font-style: italic;
 }
 
 .hero {
@@ -99,6 +100,7 @@ body {
     .hero {
         text-align: center;
         justify-content: center;
+        padding-left: 10px;
     }
 }
 
@@ -107,6 +109,7 @@ body {
     text-align: center;
     color: white;
     margin-top: 20px;
+    font-size: 20px;
 
 }
 
@@ -148,12 +151,12 @@ body {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 40px;
     padding-bottom: 20px;
     justify-items: center;
-   
+
 
 }
 
@@ -162,20 +165,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 
 
 }
 
-.glarry h1{
+.glarry h1 {
     font-family: 'playfair display';
     font-style: italic;
     text-align: center;
     margin-top: 20px;
     color: #d4af37;
     font-style: italic;
-    
-   
+
+
 
 }
 
@@ -184,7 +187,7 @@ body {
     position: relative;
     width: 200px;
     cursor: pointer;
-   
+
 }
 
 .card img {
@@ -240,7 +243,7 @@ body {
 
 @media (max-width: 768px) {
     .products {
-       grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -250,6 +253,7 @@ body {
     background-position: center;
     height: 50vh;
     position: relative;
+    font-size: 23px;
 }
 
 .about-overly {
@@ -418,4 +422,92 @@ body {
 
 .box h3 {
     margin: 10px 0;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-col h2,
+.footer-col h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #d4af37;
+}
+
+.footer-col input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d4af37;
+    background: transparent;
+    color: #fff;
+}
+
+.footer-col button {
+    background: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 }
