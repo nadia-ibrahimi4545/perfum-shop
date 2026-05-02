@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="contec.css">
+
 </head>
 
 <body>
@@ -64,20 +65,51 @@
             </div>
         </div>
     </section>
-    <div id="map"></div>
+    <section class="form">
+        <div class="form-item">
+            <div class="first-form">
+                <h1> Form</h1>
+                <h3> Get In Touch !!</h3>
+                <p>Our team is here to assist <br> you with any questions or <br>concerns.We aim to <br>respond as
+                    quickly
+                    as
+                    possible.</p>
+            </div>
+            <div>
+                <form action="">
+                    <input type="text" placeholder=" Name" id="Name" name="name">
+                    <input type="tel" placeholder="Phone" id="phone" name="phone">
+                    <input type="email" placeholder="Email" id="Name" name="Email">
+                    <textarea name="Message" id="Message" placeholder="Message" cols="7" rows="5"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="map"></div>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    <script>
-        var map = L.map('map').setView([34.3529, 62.2040], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'OSM'
-        }).addTo(map);
-        L.marker([34.3529, 62.2040]).addTo(map)
-            .bindPopup("My Location")
-            .openPopup();
+        <script>
+            var map = L.map('map').setView([34.3529, 62.2040], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'OSM'
+            }).addTo(map);
+            L.marker([34.3529, 62.2040]).addTo(map)
+                .bindPopup("My Location")
+                .openPopup();
+        </script>
+          <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav-left");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+            console.log(nav.className);
+        });
     </script>
+    </section>
+
 
 </body>
 

@@ -24,6 +24,7 @@ body {
 .nav-right {
     font-family: 'playfair display';
     color: #d4af37;
+    font-style: italic;
 }
 
 .nav-left {
@@ -70,13 +71,13 @@ body {
     }
 
     .nav-left {
-        position: fixed;
+        position:fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background: #222;
-
+        height:100vh;
+        background: #000000;
+        z-index: 1000;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -96,7 +97,6 @@ body {
     height: 50vh;
     position: relative;
 }
-
 .about-overly {
     position: absolute;
     top: 50%;
@@ -104,7 +104,6 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-
 }
 
 .slid-down {
@@ -126,7 +125,10 @@ body {
     background-color: black;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
+  
 }
+
 
 .contect h2 {
     font-family: 'playfair display';
@@ -155,7 +157,10 @@ body {
     text-align: center;
     color: white;
 }
-
+.itme{
+    border-left: 1px solid #e9e1c63a ;
+    padding: 15px;
+}
 .itme p {
     font-size: medium;
     padding-top: 10px;
@@ -164,7 +169,74 @@ body {
 
 #map {
     height: 250px;
-    width: 80%;
+    width: 70%;
     border-radius:20px;
     margin: auto;
+    background-color: #22222244;
+}
+@media (max-width: 768px) {
+    .form-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.form-item{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    gap: 70px;
+}
+.first-form h1{
+    color: transparent;
+    -webkit-text-stroke:1px #f3c613;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-family: 'playfair display';
+    font-style: italic;
+}
+.first-form{
+    padding-top: 20px;
+}
+.first-form h3{
+   color: white;
+}
+.first-form p{
+    display: inline-block;
+    color: white;
+}
+form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+form label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f3c6138c;
+    border-radius: 20px;
+    resize: none;
+    background-color: #2222224b;
+    
+}
+.form{
+   background-color: black;
+}
+form button{
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    background-color:  #f3c613;
+    border: none;
+    margin-left: 120px;
 }
